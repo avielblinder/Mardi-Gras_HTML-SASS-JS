@@ -5,26 +5,17 @@
         font-size: 3rem;
         font-family: $font-head1;
         letter-spacing: 2px;
-
-        @include mini {
-            // margin-left: 50px;
-        }
     }
 
     #contactForm {
-
-        width:70%;
         margin-bottom: 170px;
 
         @include small-screen {}
 
         @include mobile {
             text-align: center;
-
         }
-
-
-
+        
         div {
             font-family: $font-text;
             font-size: 0.7rem;
@@ -64,7 +55,6 @@
                     padding: 5px 10px;
                 }
             }
-
         }
 
         #sendButton {
