@@ -68,10 +68,6 @@
 
 4. Enjoy!
 
-## Free Experience 
-
-> "You can enjoy free access to **Pet's Blog** 
-> with no download in [Click To Open](http://pets-blog.rf.gd) ."
 
 
 
