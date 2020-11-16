@@ -63,18 +63,14 @@
             #check {
                 @include btn;
                 padding: 5px 10px;
-
             }
 
             #restart {
                 margin-left: 20%;
                 @include btn;
                 padding: 5px 10px;
-
-
             }
         }
-
 
         #result {
             text-align: center;
@@ -84,9 +80,7 @@
 
             #resultCounter {
                 font-size: 2rem;
-
             }
-
         }
     }
 }

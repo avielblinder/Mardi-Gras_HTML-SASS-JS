@@ -1,5 +1,4 @@
 .container-faq {
-
     @include small-screen {
         margin: 10% auto;
     }
@@ -11,8 +10,6 @@
         font-family: $font-head1;
         letter-spacing: 2px;
         text-transform: uppercase;
-
-
     }
 
     .accordion {
@@ -45,7 +42,6 @@
                     position: absolute;
                     right: 1rem;
                 }
-
             }
 
             .accordion-item-header.active::after {
@@ -58,7 +54,6 @@
                 overflow: hidden;
                 transition: max-height 0.2s ease-out;
 
-
                 .accordion-item-body-content {
                     padding: 1rem;
                     line-height: 1.5rem;
@@ -66,9 +61,6 @@
                     border-image: linear-gradient(to right, $purple, $yellow, $green) 1;
                 }
             }
-
-
         }
     }
-
 }

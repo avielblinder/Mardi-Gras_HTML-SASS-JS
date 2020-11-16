@@ -2,7 +2,6 @@
 
     section {
         margin: 0 auto;
-        // margin-left: 140px;
 
         @include small-screen {
             margin: 0 auto;
@@ -50,7 +49,6 @@
 
                 @include mobile {
                     width: 32%;
-
                 }
             }
 
@@ -67,27 +65,22 @@
             }
         }
 
-
         .secondary {
-
             h4 {
                 color: $green;
                 padding: 15px;
                 font-family: $font-head2;
             }
-
         }
-
-
     }
-
 
     #moreInfoBtn {
         font-size: 1.2rem;
         margin-top: 60px !important;
+     
         @include btn;
+     
         display: inline-block;
         margin: 15px;
     }
-
 }

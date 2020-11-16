@@ -42,7 +42,6 @@ footer {
       bottom: -5px;
       left: 0;
       transition: right 0.3s cubic-bezier(1, 0.5, 0, 0);
-      // color:;
 
       @include mobile {
         margin: auto 100px;
@@ -85,9 +84,6 @@ footer {
     content: none;
   }
 
-  @include mobile {
-    // line-height: 1.4;
-  }
   .go-up {
     padding-top: 8px;
     border: 2px solid $green;

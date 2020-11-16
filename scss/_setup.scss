@@ -25,12 +25,9 @@ body {
     width: 55px;
     padding-top: 10px;
     border-radius: 8px;
-
-
 }
 
 @mixin hr-div {
-
     width: 100%;
     height: 15px;
 }
@@ -54,7 +51,6 @@ body {
     &:active {
         box-shadow: 0 0 1px 1px $green;
         border: none;
-
     }
 
     &:focus {
