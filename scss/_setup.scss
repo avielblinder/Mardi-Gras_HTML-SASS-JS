@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital@1&display=swap');
+$font-head1:'Henny Penny';
+$font-head2:'Pattaya';
+$font-text:'Roboto';
+$purple:#9453a6;
+$green:#8cbf3f;
+$yellow:#f2cc0f;
+$white:#f2f2f2;
+$black:#0d0d0d;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $white;
+}
+
+@mixin clochDith {
+    display: block;
+    height: 7vh;
+    width: 55px;
+    padding-top: 10px;
+    border-radius: 8px;
+
+
+}
+
+@mixin hr-div {
+
+    width: 100%;
+    height: 15px;
+}
+
+@mixin btn {
+    display: block;
+    color: $green;
+    background-color: $purple;
+    border: 2px solid $yellow;
+    box-shadow: 0 0 2px 2px $green;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    font-family: $font-text;
+
+    &:hover {
+        transform: scale(1.1);
+        color: $yellow;
+    }
+
+    &:active {
+        box-shadow: 0 0 1px 1px $green;
+        border: none;
+
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin small-screen {
+    @media (max-width:1150px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:990px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:770px) {
+        @content;
+    }
+}
+
+@mixin mini {
+    @media (max-width:570px) {
+        @content;
+    }
+}

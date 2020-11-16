@@ -1,0 +1,145 @@
+header {
+    height: 2rem;
+    background-color: $purple !important;
+    text-align: center;
+}
+
+a img[alt="web logo"] {
+    z-index: 1500;
+    width: 50px;
+    height: 50px;
+
+}
+
+.navbar-center {
+    position: fixed;
+    width: 100%;
+    background-color: $purple !important;
+    font-family: $font-head2;
+    font-size: 1.5em;
+    z-index: 2000;
+    height: 3.2rem;
+
+    @include tablet {
+        padding: 6px 5px;
+    }
+
+    .navbar-brand {
+
+        #mg_head {
+            width: 180px;
+            height: 3rem;
+
+            @include tablet {
+                position: absolute;
+                top: 2px;
+                width: 180px;
+                height: 3rem;
+
+
+            }
+
+        }
+    }
+
+    .navbar-toggler {
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .navbar-collapse {
+
+        @include small-screen {
+            transform: translate(-10%, 0);
+        }
+
+        @include tablet {
+            transform: translate(0, 0);
+            background-color: #9453a6f1 !important;
+        }
+
+        form {
+            .form-control {
+                &:focus {
+                    box-shadow: none;
+                    border: outset 1px $yellow;
+                }
+            }
+
+            button[type="submit"] {
+                font-family: $font-head2 !important;
+                color: $green !important;
+                border: 1px solid $green;
+
+                &:hover {
+                    background-color: $green !important;
+                    color: $purple !important;
+                }
+            }
+
+            @include small-screen {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            padding-top: 0;
+            background-color: $purple;
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+
+            @include tablet {
+                padding-top: 5px;
+
+            }
+
+            .nav-item {
+                @include tablet {
+                    border-top: 1px solid $green;
+                }
+
+                a {
+                    color: $green !important;
+                    padding: 5px 20px;
+                    transition: all 0.3s ease-in-out;
+
+
+                    &:hover {
+                        transform: scale(1.1);
+                        color: $yellow !important;
+                    }
+
+                    @include tablet {
+                        line-height: 3;
+                    }
+
+                }
+
+                .dropdown-menu {
+                    margin-top: 2.5px;
+                    background-color: #9453a6d8;
+                    text-align: center;
+                    overflow: hidden;
+                    // opacity: 0.8;
+
+                    .dropdown-item {
+
+                        &:hover {
+                            background-color: transparent;
+                        }
+
+                        // background-color: $purple;
+                        font-size: 1.3rem;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}

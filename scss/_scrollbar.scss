@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: $purple;
+
+    @include mobile {
+        width: 0;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, transparent, $yellow, $green, transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, transparent, $green, $yellow, transparent);
+}

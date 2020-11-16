@@ -1,0 +1,227 @@
+#carouselExampleCaptions {
+    width: 90% !important;
+    margin: 0 auto !important;
+    height: 100vh !important;
+
+    @include mobile {
+        height: 600px !important;
+    }
+
+    @include mini {
+        height: 450px !important;
+    }
+}
+
+div.carousel-item {
+    h5 {
+        color: $yellow;
+        font-family: $font-text;
+        font-weight: 800;
+    }
+
+    img {
+        width: 100% !important;
+        height: 100vh !important;
+
+        @include mobile {
+            height: 600px !important;
+        }
+
+        @include mini {
+            height: 450px !important;
+        }
+    }
+}
+
+#clockPlace {
+    background-color: #9453a6a2;
+    font-family: $font-text;
+    width: 250px;
+    height: 140px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+    border-radius: 15px;
+    text-align: center;
+    color: $white;
+
+    @include tablet {
+        position: static;
+        margin: 50px auto;
+        background-color: $purple;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    span {
+        margin: 0px auto;
+    }
+
+    .clock {
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            .container-clock {
+                margin-top: 5px;
+                color: $black;
+                width: 50px;
+                height: 70px;
+                background-color: #8cbf3f96;
+                border-radius: 8px;
+
+                span {
+                    @include clochDith;
+                    margin: -5px auto;
+                }
+
+                p {
+                    font-size: 0.7rem;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#mainPageHeadline {
+    font-family: $font-head1;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    transform: rotate(5deg);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    position: absolute;
+    top: 130px;
+    right: 220px;
+    color: $green;
+    text-shadow: 2px 0 0px $purple, 3px 2px 0px $purple, 3px 0 3px $purple, 5px 0 3px $purple, 6px 2px 3px $yellow, 6px 0 9px $yellow, 8px 0 9px $yellow, 9px 2px 9px $yellow, 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64, 77, 0, 0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5);
+
+    h3 {
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+.main-hr-green {
+    background-color: $green;
+    @include hr-div;
+}
+
+.main-hr-yellow {
+    background-color: $yellow;
+    @include hr-div;
+}
+
+.main-hr-purple {
+    background-color: $purple;
+    @include hr-div;
+}
+
+h2.cards-header {
+    text-transform: capitalize;
+    font-family: $font-head2;
+    font-size: 2.5rem;
+}
+
+.container {
+    font-family: $font-text;
+}
+
+.card-deck {
+
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .card {
+        width: 300px;
+        transition: all 0.5s ease-in-out;
+        margin-top: 50px;
+        box-shadow: 0px 0px 8px 5px rgb(201, 192, 192);
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0px 0px 2px 1px rgb(201, 192, 192);
+        }
+
+        @include tablet {
+            margin: 30px auto;
+        }
+
+        @include mobile {
+            margin: 30px auto !important;
+            width: 200px;
+            grid-column: 1fr;
+        }
+
+        a {
+            display: block;
+            color: $black;
+            font-family: $font-text;
+
+            .card-body {
+                padding: 5px !important;
+                overflow: hidden;
+
+                .card-text {
+                    text-align: center;
+                    margin: 0;
+                    text-transform: lowercase;
+
+                    span,
+                    h6 {
+                        margin: 5px 0 8px 0;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        display: block;
+                        font-size: 1.1em;
+                    }
+
+                    .btn {
+                        display: none !important;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+}
+
+#big_logo {
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+
+    #big_image {
+        position: static;
+        width: 250px;
+        height: 250px;
+        margin: 50px;
+
+    }
+}

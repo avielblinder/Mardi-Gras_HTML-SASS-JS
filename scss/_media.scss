@@ -1,0 +1,129 @@
+.container-media {
+    margin: 0 auto;
+
+
+    #mediaHeader {
+        text-align: center;
+        font-family: $font-head1;
+        margin: 150px auto 100px auto;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+
+        @include mini {
+            margin-bottom: 20px;
+        }
+    }
+
+    .galleryContainer {
+        margin: 0 auto;
+        // margin: 0 170px;
+
+        @include small-screen {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        @include tablet {
+            width: 100%;
+
+        }
+
+        @include mini {
+            width: 100%;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            border-radius: 50%;
+            width: 270px;
+            height: 270px;
+            overflow: hidden;
+            margin: 20px;
+            border: solid 5px $yellow;
+
+            @include mobile {
+                width: 150px;
+                height: 150px;
+            }
+
+            @include mini {
+                width: 100px;
+                height: 100px;
+            }
+
+            .videoDiv {
+                width: 270px;
+                height: 270px;
+                position: relative;
+                top: 0;
+                left: 0px;
+                z-index: 10;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: grayscale(100%);
+                }
+            }
+
+            iframe {
+                width: 380px;
+                height: 380px;
+                position: relative;
+                top: -330px;
+                z-index: 1;
+                left: -60px;
+                transition: all 0.3s ease-in-out;
+
+                @include mobile {
+                    width: 200px;
+                    height: 200px;
+                    left: -30px;
+                    top: -300px;
+                }
+
+                @include mini {
+                    width: 100px;
+                    height: 100px;
+                    left: -5px;
+                    top: -275px;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: grayscale(100%);
+
+                }
+            }
+
+            img {
+                position: relative;
+                top: -25px;
+                left: -25px;
+                border-radius: 50%;
+                width: 270px;
+                height: 270px;
+                margin: 20px;
+                transition: all 0.3s ease-in-out;
+
+                @include mobile {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                @include mini {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: grayscale(100%);
+
+                }
+
+            }
+        }
+    }
+}

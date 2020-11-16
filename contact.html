@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mardi Gras New Orleans</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ecf974e2978280013bc9d93&product=inline-share-buttons" async="async"></script>
+    <script src="./js/createColorsContact.js"></script>
+    <script type="module" src="./js/bannerInit.js" defer></script>
+    <script type="module" src="./js/contactForm.js" defer></script>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img id="mg_head" src="./images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More Info
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./faq.html">Faq</a>
+                <a class="dropdown-item" href="./trivia.html">Trivia</a>
+                </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <div class="container">
+      <h4 id="contactHeader"></h4>
+    <form id="contactForm" class="container col-lg-3 col-md-4 col-s-6">
+        <label for="firstName col-xl-12">Name:</label>
+        <div class="fnError"></div>
+        <input type="text" id="firstName" placeholder="First Name...">
+        <label for="lastName">Last Name:</label>
+        <div class="lnError"></div>
+        <input type="text" id="lastName" placeholder="Last Name...">
+        <label for="emailAddress">Email:</label>
+        <div class="eError"></div>
+        <input type="email" id="emailAddress" placeholder="Email Address...">
+        <label for="textArea">Write Us:</label>
+        <div class="taError"></div>
+        <textarea name="" id="textArea" cols="30" rows="10" placeholder="Comments..."></textarea>
+        <input type="button" id="sendButton" value="Send Form">
+    </form>
+</div>
+<div id="bannerContainer"></div>
+<div id="bannerContainer2"></div>
+    <!-- footer -->
+    <div class="footer-line"></div>
+  </div>
+    <footer>  
+    
+    <div class="sharethis-inline-share-buttons"></div>
+    <a href="https://www.bestneworleanshotels.com/" target="_blank">Book Hotel</a>
+        <a href="http://www.experienceneworleans.com/" target="_blank">Experience New Orleans</a>
+        <a href="https://www.neworleansrestaurants.com/" target="_blank">Restaurants</a>
+        <a href="https://www.neworleanscoupons.com/" target="_blank">Coupons</a>
+      
+        <p>site by Aviel Blinder &#169;</p>
+        <a id="goUp" href="#header"><div class="go-up">&#x022C0</div></a>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

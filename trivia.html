@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mardi Gras New Orleans</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ecf974e2978280013bc9d93&product=inline-share-buttons" async="async"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css" />
+    <script async src="./js/createColorTrivia.js"></script>
+    <script defer src="./js/trivia.js"></script>
+    <script type="module" defer src="./js/bannerInit.js"></script>
+    <script type="module" src="./js/main.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <header id="header">
+      <nav class="navbar navbar-center navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img id="mg_head" src="./images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More Info
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./faq.html">Faq</a>
+                <a class="dropdown-item" href="./trivia.html">Trivia</a>
+                </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <div class="container container-trivia">
+
+        <h2 id="triviaHeader"></h2>
+        <form id="quiz" name="quiz" class="container col-lg-12 col-md-10 col-s-6">
+        <label for="">Witch year was the first Mardi Gras in New Orleans?</label>
+        <div class="answerImageResult"></div>
+        <input type="radio" id="an" name="question1" value="1">1857<br>
+        <input type="radio" id="an" name="question1" value="2">1650<br>
+        <input type="radio" id="an" name="question1" value="3">1798<br>
+        <input type="radio" id="an" name="question1" value="4">1920<br>
+
+
+        <label for="">What is the Mardi Gras colors?</label>
+       
+        <input type="radio" id="an" name="question2" value="1">black,green and red<br>
+        <input type="radio" id="an" name="question2" value="2">blue,purple and silver<br>
+        <input type="radio" id="an" name="question2" value="3">purple,green and gold<br>
+        <input type="radio" id="an" name="question2" value="4">purple,green and black<br>
+
+        <label for="">What is the other name of Mardi Gras?</label>
+      
+
+        <input type="radio" id="an" name="question3" value="1">Festival day <br>
+        <input type="radio" id="an" name="question3" value="2">Gold day<br>
+        <input type="radio" id="an" name="question3" value="3">Thin sunday<br>
+        <input type="radio" id="an" name="question3" value="4">Fat tuesday<br>
+
+        <label for="">How many days we celebrate Mardi Gras?</label>
+ 
+
+        <input type="radio" id="an" name="question4" value="1">Week <br>
+        <input type="radio" id="an" name="question4" value="2">Three days<br>
+        <input type="radio" id="an" name="question4" value="3">One day<br>
+        <input type="radio" id="an" name="question4" value="4">Two days<br>
+
+        <label for="">When is Mardi Gras?</label>
+     
+
+        <input type="radio" id="an" name="question5" value="1">30 days after Christmas<br>
+        <input type="radio" id="an" name="question5" value="2">47 days before Easter<br>
+        <input type="radio" id="an" name="question5" value="3">Day after Family day<br>
+        <input type="radio" id="an" name="question5" value="4">On the first full moon<br>
+
+        <label for="">What is traditional throw in Mardi Gras?</label>
+        
+
+        <input type="radio" id="an" name="question6" value="1">beads<br>
+        <input type="radio" id="an" name="question6" value="2">candies<br>
+        <input type="radio" id="an" name="question6" value="3">balls<br>
+        <input type="radio" id="an" name="question6" value="4">cloths<br>
+
+        <label for="">What is prohibition in Mardi Gras?</label>
+      
+        <input type="radio" id="an" name="question7" value="1">Rudeness<br>
+        <input type="radio" id="an" name="question7" value="2">Nudity<br>
+        <input type="radio" id="an" name="question7" value="3">Drunkenness<br>
+        <input type="radio" id="an" name="question7" value="4">Advertising<br>
+
+        <label for="">What is Illegal onboard a float in Mardi Gras?</label>
+
+
+        <input type="radio" id="an" name="question8" value="1">Not wearing a mask<br>
+        <input type="radio" id="an" name="question8" value="2">Wearing white<br>
+        <input type="radio" id="an" name="question8" value="3">Dancing<br>
+        <input type="radio" id="an" name="question8" value="4">Cursing<br>
+
+        <label for="">What is the meaning of Mardi Gras colors?</label>
+ 
+
+        <input type="radio" id="an" name="question9" value="1">Religion,love and faith<br>
+        <input type="radio" id="an" name="question9" value="2">Mony,time and happiness<br>
+        <input type="radio" id="an" name="question9" value="3">Faith,power and justice<br>
+        <input type="radio" id="an" name="question9" value="4">Beauty,wealth and jealousy<br>
+
+        <label for="">Which music are related with Mardi Gras?</label>
+
+        <input type="radio" id="an" name="question10" value="1">Soul<br>
+        <input type="radio" id="an" name="question10" value="2">Jazz<br>
+        <input type="radio" id="an" name="question10" value="3">Pop<br>
+        <input type="radio" id="an" name="question10" value="4">Rap<br>
+
+        <div class="warper">
+          <input type="button" id="check" value="check">
+         <input type="button" id="restart" value="Try Again">
+       </div>
+
+        <div id="result">
+          <p id="resultCounter"></p>
+        </div>
+
+      </form>
+    </div>
+
+    <div id="bannerContainer"></div>
+    <div id="bannerContainer2"></div>
+
+
+    <!-- footer -->
+    <div class="footer-line"></div>
+  </div>
+    <footer>  
+    
+    <div class="sharethis-inline-share-buttons"></div>
+        <a href="https://www.bestneworleanshotels.com/" target="_blank">Book Hotel</a>
+        <a href="http://www.experienceneworleans.com/" target="_blank">Experience New Orleans</a>
+        <a href="https://www.neworleansrestaurants.com/" target="_blank">Restaurants</a>
+        <a href="https://www.neworleanscoupons.com/" target="_blank">Coupons</a>
+      
+        <p>site by Aviel Blinder &#169;</p>
+        <a id="goUp" href="#header"><div class="go-up">&#x022C0</div></a>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+   
+  </body>
+</html>

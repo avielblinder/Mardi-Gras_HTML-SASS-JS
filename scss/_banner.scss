@@ -1,0 +1,95 @@
+#bannerContainer2 {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 150px;
+  height: 400px;
+  z-index: 500;
+  margin-left: 10px;
+
+  @include small-screen {
+    display: none;
+  }
+
+}
+
+#bannerContainer {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  width: 150px;
+  height: 400px;
+  z-index: 500;
+
+  @include small-screen {
+    margin: 150px auto;
+    display: block;
+    background-position: center;
+    position: static;
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+  }
+
+}
+
+#banner {
+  border-radius: 8px;
+  border: solid 1px black;
+  position: relative;
+  width: 150px;
+  height: 450px;
+  background-position: center 100%;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+
+  @include small-screen {}
+
+  @include small-screen {
+    margin: 150px auto;
+    display: block;
+    background-position: center;
+    position: static;
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+  }
+
+  #colorDiv {
+    #borderDiv {
+      a {
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: black;
+        width: 100px;
+        position: absolute;
+        bottom: 50px;
+        left: 25px;
+        margin: 0 auto;
+        padding: 5px 8px;
+        border-radius: 8px;
+        line-height: 1.5;
+        @include btn;
+
+        @include small-screen {
+          position: static;
+          margin: 90px auto;
+        }
+      }
+    }
+  }
+
+  #hotelLogo {
+    margin: 20px auto;
+    color: $black;
+    font-family: $font-head2;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+      0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+
+    @include tablet {
+      margin-top: 15px;
+    }
+  }
+}

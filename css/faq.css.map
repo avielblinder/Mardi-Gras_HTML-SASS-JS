@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,UADM,CACN,UAAU,CAAA;EACN,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,eAAe;EACvB,SAAS,EAAE,IAAI;EAEf,cAAc,EAAE,GAAG;CAmBtB",
+    "sources": [
+        "../scss/faq.scss"
+    ],
+    "names": [],
+    "file": "faq.css"
+}
