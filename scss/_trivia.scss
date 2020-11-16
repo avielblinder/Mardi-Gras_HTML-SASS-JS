@@ -20,6 +20,10 @@
             margin: 20px;
             float: right;
 
+            @include mini {
+                margin-top: 80px;
+            }
+
             img {
                 width: 50px;
                 height: 50px;
@@ -34,7 +38,7 @@
                 }
 
                 @include mini {
-                    margin-bottom: 220px;
+                    margin-bottom: 250px;
                 }
             }
         }

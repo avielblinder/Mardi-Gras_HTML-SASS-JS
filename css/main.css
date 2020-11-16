@@ -1235,6 +1235,12 @@ footer p {
   float: right;
 }
 
+@media (max-width: 570px) {
+  .container-trivia #quiz .answerImageResult {
+    margin-top: 80px;
+  }
+}
+
 .container-trivia #quiz .answerImageResult img {
   width: 50px;
   height: 50px;
@@ -1255,7 +1261,7 @@ footer p {
 
 @media (max-width: 570px) {
   .container-trivia #quiz .answerImageResult img {
-    margin-bottom: 220px;
+    margin-bottom: 250px;
   }
 }
 
